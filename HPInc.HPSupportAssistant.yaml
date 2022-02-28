@@ -1,0 +1,27 @@
+# Created using wingetcreate 0.5.0.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.1.0.schema.json
+PackageIdentifier: HPInc.HPSupportAssistant
+Publisher: HP Inc.
+PackageName: HP Support Assistant
+PackageVersion: 0.2.56.9141
+License: Copyright (c) 2019 HP Development Company, LP.
+InstallerType: exe
+Tags:
+- HP Support
+- ICON=https://pbs.twimg.com/profile_images/378800000544805595/17894ca6512307dcb687fd7b1a8c3d4e_400x400.png
+- DETECTION="C:\Program Files (x86)\HP\HP Support Framework\UninstallHPSA.exe"
+- UNINSTALLCOMMAND="%ProgramFiles(x86)%\HP\HP Support Framework\UninstallHPSA.exe" /s /v /qn
+- ADGROUPI=Jason-Test
+ShortDescription: HP Support Assistant
+PackageUrl: https://support.hp.com/gb-en/help/hp-support-assistant
+Installers:
+- Architecture: x64
+  InstallerType: exe
+  InstallerUrl: https://ftp.ext.hp.com/pub/softpaq/sp138001-138500/sp138267.exe
+  InstallerSha256: D48D7A4631AE30107A670D937B74ED56C1B49C94B41F5A004C00FA9FD79CF2BC
+InstallerSwitches:
+  Silent: /s /v /qn
+PackageLocale: en-US
+ManifestType: installer
+ManifestVersion: 1.1.0
+MinimumOSVersion: 10.0.18362.0
